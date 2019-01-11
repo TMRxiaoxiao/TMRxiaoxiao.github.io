@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>时光 | 陶慧勇的个人博客</title>
+  <title>JS动态引入js、CSS动态创建script/link/style标签 | 陶慧勇的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="随笔">
+  <meta name="description" content="一，动态创建link方式 代码如下  12345678910111213function addCssByLink(url)&amp;#123;     var doc=document;     var link=doc.createElement(&quot;link&quot;);     link.setAttribute(&quot;rel&quot;, &quot;stylesheet&quot;);     link.setAttribute(&quot;ty">
+<meta name="keywords" content="技术">
 <meta property="og:type" content="article">
-<meta property="og:title" content="时光">
-<meta property="og:url" content="http://yoursite.com/2019/01/10/时光/index.html">
+<meta property="og:title" content="JS动态引入js、CSS动态创建script&#x2F;link&#x2F;style标签">
+<meta property="og:url" content="http://yoursite.com/2019/01/11/JS动态引入js、CSS动态创建script-link-style标签/index.html">
 <meta property="og:site_name" content="陶慧勇的个人博客">
+<meta property="og:description" content="一，动态创建link方式 代码如下  12345678910111213function addCssByLink(url)&amp;#123;     var doc=document;     var link=doc.createElement(&quot;link&quot;);     link.setAttribute(&quot;rel&quot;, &quot;stylesheet&quot;);     link.setAttribute(&quot;ty">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2019/01/10/时光/img/time.gif">
-<meta property="og:updated_time" content="2019-01-10T02:55:46.854Z">
+<meta property="og:updated_time" content="2019-01-11T06:09:36.995Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="时光">
-<meta name="twitter:image" content="http://yoursite.com/2019/01/10/时光/img/time.gif">
+<meta name="twitter:title" content="JS动态引入js、CSS动态创建script&#x2F;link&#x2F;style标签">
+<meta name="twitter:description" content="一，动态创建link方式 代码如下  12345678910111213function addCssByLink(url)&amp;#123;     var doc=document;     var link=doc.createElement(&quot;link&quot;);     link.setAttribute(&quot;rel&quot;, &quot;stylesheet&quot;);     link.setAttribute(&quot;ty">
   
     <link rel="alternative" href="/atom.xml" title="陶慧勇的个人博客" type="application/atom+xml">
   
@@ -170,27 +171,47 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-时光" class="article article-type-post " itemscope="" itemprop="blogPost">
+            <article id="post-JS动态引入js、CSS动态创建script-link-style标签" class="article article-type-post " itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      时光
+      JS动态引入js、CSS动态创建script/link/style标签
     </h1>
   
 
         
-        <a href="/2019/01/10/时光/" class="archive-article-date">
-  	<time datetime="2019-01-10T02:48:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-10</time>
+        <a href="/2019/01/11/JS动态引入js、CSS动态创建script-link-style标签/" class="archive-article-date">
+  	<time datetime="2019-01-11T06:03:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-11</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="img/time.gif" alt="640"></p>
+        <h3 id="一，动态创建link方式"><a href="#一，动态创建link方式" class="headerlink" title="一，动态创建link方式"></a>一，动态创建link方式</h3><blockquote>
+<p>代码如下</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">addCssByLink</span>(<span class="params">url</span>)</span>&#123; </span><br><span class="line">    <span class="keyword">var</span> doc=<span class="built_in">document</span>; </span><br><span class="line">    <span class="keyword">var</span> link=doc.createElement(<span class="string">"link"</span>); </span><br><span class="line">    link.setAttribute(<span class="string">"rel"</span>, <span class="string">"stylesheet"</span>); </span><br><span class="line">    link.setAttribute(<span class="string">"type"</span>, <span class="string">"text/css"</span>); </span><br><span class="line">    link.setAttribute(<span class="string">"href"</span>, url); </span><br><span class="line">   </span><br><span class="line">    <span class="keyword">var</span> heads = doc.getElementsByTagName(<span class="string">"head"</span>); </span><br><span class="line">    <span class="keyword">if</span>(heads.length) </span><br><span class="line">        heads[<span class="number">0</span>].appendChild(link); </span><br><span class="line">    <span class="keyword">else</span> </span><br><span class="line">        doc.documentElement.appendChild(link); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="二，动态创建style方式"><a href="#二，动态创建style方式" class="headerlink" title="二，动态创建style方式"></a>二，动态创建style方式</h3><blockquote>
+<p>但是,这样的话,需要加载整个css文件,但是那样有可能浪费一个http请求并占用一个服务器请求数,并等待上一段下载时间,所以,Firebug Lite采取的是将css代码写在js中,然后动态创建style标签的方法,正如下面所示</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">addCssByStyle</span>(<span class="params">cssString</span>)</span>&#123; </span><br><span class="line">    <span class="keyword">var</span> doc=<span class="built_in">document</span>; </span><br><span class="line">    <span class="keyword">var</span> style=doc.createElement(<span class="string">"style"</span>); </span><br><span class="line">    style.setAttribute(<span class="string">"type"</span>, <span class="string">"text/css"</span>); </span><br><span class="line">   </span><br><span class="line">    <span class="keyword">if</span>(style.styleSheet)&#123;<span class="comment">// IE </span></span><br><span class="line">        style.styleSheet.cssText = cssString; </span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;<span class="comment">// w3c </span></span><br><span class="line">        <span class="keyword">var</span> cssText = doc.createTextNode(cssString); </span><br><span class="line">        style.appendChild(cssText); </span><br><span class="line">    &#125; </span><br><span class="line">   </span><br><span class="line">    <span class="keyword">var</span> heads = doc.getElementsByTagName(<span class="string">"head"</span>); </span><br><span class="line">    <span class="keyword">if</span>(heads.length) </span><br><span class="line">        heads[<span class="number">0</span>].appendChild(style); </span><br><span class="line">    <span class="keyword">else</span> </span><br><span class="line">        doc.documentElement.appendChild(style); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>这样的话,如果是较少的代码,可以比较方便的实现到动态加载css的效果,但是如果为了方便维护和管理,并没有等待时间限制,使用link方式更加合适</p>
+</blockquote>
+<h3 id="三-动态创建script方式"><a href="#三-动态创建script方式" class="headerlink" title="三,动态创建script方式"></a>三,动态创建script方式</h3><blockquote>
+<p>代码如下</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> script=<span class="built_in">document</span>.createElement(<span class="string">"script"</span>); </span><br><span class="line">script.setAttribute(<span class="string">"type"</span>, <span class="string">"text/javascript"</span>); </span><br><span class="line">script.setAttribute(<span class="string">"src"</span>, <span class="string">"JustWalking.js"</span>); </span><br><span class="line"><span class="keyword">var</span> heads = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"head"</span>); </span><br><span class="line"><span class="keyword">if</span>(heads.length) </span><br><span class="line">    heads[<span class="number">0</span>].appendChild(script); </span><br><span class="line"><span class="keyword">else</span> </span><br><span class="line">    <span class="built_in">document</span>.documentElement.appendChild(script);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>这种方式在IE内核的浏览器中支持，但是在google、360极速、firefox下却不行</p>
+</blockquote>
+<h3 id="四，打印引入style方式"><a href="#四，打印引入style方式" class="headerlink" title="四，打印引入style方式"></a>四，打印引入style方式</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.write(<span class="string">"&lt;link rel=\"stylesheet\" href=\"uild/style.css\" type=\"text/css\" media=\"screen\"/&gt;"</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="五，打印引入js方式"><a href="#五，打印引入js方式" class="headerlink" title="五，打印引入js方式"></a>五，打印引入js方式</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.write(<span class="string">"&lt;script type=\"text/javascript\" src=\"JustWalking.js\"&gt;&lt;/script&gt;"</span>);</span><br></pre></td></tr></table></figure>
 
       
 
@@ -225,7 +246,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
         		</li>
       		
 		</ul>
@@ -281,7 +302,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/01/10/时光/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/01/11/JS动态引入js、CSS动态创建script-link-style标签/" alt="微信分享二维码">
     </div>
 </div>
 
