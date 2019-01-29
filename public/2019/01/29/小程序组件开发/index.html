@@ -6,20 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>图片转base64 | 陶慧勇的个人博客</title>
+  <title>小程序组件开发 | 陶慧勇的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="js图片转base64的方法封装">
+  <meta name="description" content="小程序的界面是由一系列组件构成的。小程序基础库提供了一组基础组件来满足开发者的基本需求。但随着小程序开发变得越来越复杂，单纯使用基础组件来进行开发也变得越来越不方便。 例如，较为复杂的小程序中常常会有一些通用的交互模块，比如“下拉选择列表”、“搜索框”、“日期选择器”等。这些界面交互模块可能会在多个页面中用到，逻辑也相对独立。然而，用传统的小程序开发方法来实现这样的模块是非常繁琐的。">
 <meta name="keywords" content="技术">
 <meta property="og:type" content="article">
-<meta property="og:title" content="图片转base64">
-<meta property="og:url" content="http://yoursite.com/2019/01/10/图片转base64/index.html">
+<meta property="og:title" content="小程序组件开发">
+<meta property="og:url" content="http://yoursite.com/2019/01/29/小程序组件开发/index.html">
 <meta property="og:site_name" content="陶慧勇的个人博客">
-<meta property="og:description" content="js图片转base64的方法封装">
+<meta property="og:description" content="小程序的界面是由一系列组件构成的。小程序基础库提供了一组基础组件来满足开发者的基本需求。但随着小程序开发变得越来越复杂，单纯使用基础组件来进行开发也变得越来越不方便。 例如，较为复杂的小程序中常常会有一些通用的交互模块，比如“下拉选择列表”、“搜索框”、“日期选择器”等。这些界面交互模块可能会在多个页面中用到，逻辑也相对独立。然而，用传统的小程序开发方法来实现这样的模块是非常繁琐的。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-10T02:01:21.656Z">
+<meta property="og:image" content="http://t12.baidu.com/it/u=3637876253,290426546&fm=173&app=25&f=JPEG?w=640&h=103">
+<meta property="og:image" content="http://t10.baidu.com/it/u=1189815477,1193870929&fm=173&app=25&f=JPEG?w=640&h=145&s=0EF0EC12CD226D2054EDD4D3000050B3">
+<meta property="og:image" content="http://t10.baidu.com/it/u=3859657605,608462023&fm=173&app=25&f=JPEG?w=640&h=119&s=9C247C334B2365245A6984DA0000C0B3">
+<meta property="og:image" content="http://t11.baidu.com/it/u=1504840195,3759410614&fm=173&app=25&f=JPEG?w=640&h=326&s=1C267C330B62452414FDB5DA000080B3">
+<meta property="og:image" content="http://t10.baidu.com/it/u=2209317972,4280084377&fm=173&app=25&f=JPEG?w=640&h=140&s=182874334D625F204854B4DC0000C0B3">
+<meta property="og:image" content="http://t11.baidu.com/it/u=209958574,2462853158&fm=173&app=25&f=JPEG?w=640&h=61">
+<meta property="og:updated_time" content="2019-01-29T01:45:21.893Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="图片转base64">
-<meta name="twitter:description" content="js图片转base64的方法封装">
+<meta name="twitter:title" content="小程序组件开发">
+<meta name="twitter:description" content="小程序的界面是由一系列组件构成的。小程序基础库提供了一组基础组件来满足开发者的基本需求。但随着小程序开发变得越来越复杂，单纯使用基础组件来进行开发也变得越来越不方便。 例如，较为复杂的小程序中常常会有一些通用的交互模块，比如“下拉选择列表”、“搜索框”、“日期选择器”等。这些界面交互模块可能会在多个页面中用到，逻辑也相对独立。然而，用传统的小程序开发方法来实现这样的模块是非常繁琐的。">
+<meta name="twitter:image" content="http://t12.baidu.com/it/u=3637876253,290426546&fm=173&app=25&f=JPEG?w=640&h=103">
   
     <link rel="alternative" href="/atom.xml" title="陶慧勇的个人博客" type="application/atom+xml">
   
@@ -171,29 +178,77 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-图片转base64" class="article article-type-post " itemscope="" itemprop="blogPost">
+            <article id="post-小程序组件开发" class="article article-type-post " itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      图片转base64
+      小程序组件开发
     </h1>
   
 
         
-        <a href="/2019/01/10/图片转base64/" class="archive-article-date">
-  	<time datetime="2019-01-10T01:58:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-10</time>
+        <a href="/2019/01/29/小程序组件开发/" class="archive-article-date">
+  	<time datetime="2019-01-29T01:42:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-29</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>js图片转base64的方法封装</p>
+        <p>小程序的界面是由一系列组件构成的。小程序基础库提供了一组基础组件来满足开发者的基本需求。但随着小程序开发变得越来越复杂，单纯使用基础组件来进行开发也变得越来越不方便。</p>
+<p>例如，较为复杂的小程序中常常会有一些通用的交互模块，比如“下拉选择列表”、“搜索框”、“日期选择器”等。这些界面交互模块可能会在多个页面中用到，逻辑也相对独立。然而，用传统的小程序开发方法来实现这样的模块是非常繁琐的。</p>
 <a id="more"></a>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"en"</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;meta name=<span class="string">"viewport"</span> content=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span><br><span class="line">    &lt;meta http-equiv=<span class="string">"X-UA-Compatible"</span> content=<span class="string">"ie=edge"</span>&gt;</span><br><span class="line">    &lt;title&gt;js 图片转base64方式&lt;<span class="regexp">/title&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;h3&gt;实现方式一：Blob和FileReader 对象&lt;<span class="regexp">/h3&gt;</span></span><br><span class="line"><span class="regexp">    &lt;ol&gt;</span></span><br><span class="line"><span class="regexp">        &lt;li&gt;使用xhr请求图片,并设置返回的文件类型为Blob对象[xhr.responseType = "blob"]&lt;/</span>li&gt;</span><br><span class="line">        &lt;li&gt;使用FileReader 对象接收blob&lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>ol&gt;</span><br><span class="line">    &lt;p id=<span class="string">"container1"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line">    &lt;script&gt;</span><br><span class="line">    getBase64(<span class="string">"http://img.mp.itc.cn/upload/20170816/d4b0f9df5f1646a7a624b80a101df9dc_th.jpg"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">getBase64</span>(<span class="params">imgUrl</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">window</span>.URL = <span class="built_in">window</span>.URL || <span class="built_in">window</span>.webkitURL;</span><br><span class="line">        <span class="keyword">var</span> xhr = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">        xhr.open(<span class="string">"get"</span>, imgUrl, <span class="literal">true</span>);</span><br><span class="line">        <span class="comment">// 至关重要</span></span><br><span class="line">        xhr.responseType = <span class="string">"blob"</span>;</span><br><span class="line">        xhr.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="keyword">this</span>.status == <span class="number">200</span>) &#123;</span><br><span class="line">                <span class="comment">//得到一个blob对象</span></span><br><span class="line">                <span class="keyword">var</span> blob = <span class="keyword">this</span>.response;</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">"blob"</span>, blob)</span><br><span class="line">                <span class="comment">//  至关重要</span></span><br><span class="line">                <span class="keyword">let</span> oFileReader = <span class="keyword">new</span> FileReader();</span><br><span class="line">                oFileReader.onloadend = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">                    <span class="keyword">let</span> base64 = e.target.result;</span><br><span class="line">                    <span class="built_in">console</span>.log(<span class="string">"方式一》》》》》》》》》"</span>, base64)</span><br><span class="line">                &#125;;</span><br><span class="line">                oFileReader.readAsDataURL(blob);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                <span class="comment">//====为了在页面显示图片，可以删除====</span></span><br><span class="line">                <span class="keyword">var</span> img = <span class="built_in">document</span>.createElement(<span class="string">"img"</span>);</span><br><span class="line">                img.onload = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">                    <span class="built_in">window</span>.URL.revokeObjectURL(img.src); <span class="comment">// 清除释放</span></span><br><span class="line">                &#125;;</span><br><span class="line">                <span class="keyword">let</span> src = <span class="built_in">window</span>.URL.createObjectURL(blob);</span><br><span class="line"></span><br><span class="line">                img.src = src</span><br><span class="line">                <span class="built_in">document</span>.getElementById(<span class="string">"container1"</span>).appendChild(img);</span><br><span class="line">                <span class="comment">//====为了在页面显示图片，可以删除====</span></span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        xhr.send();</span><br><span class="line">    &#125;</span><br><span class="line">    &lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">    &lt;h3&gt;实现方式二：Canvas&lt;/</span>h3&gt;</span><br><span class="line">    &lt;ol&gt;</span><br><span class="line">        &lt;li&gt;使用canvas.toDataURL()方法&lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp">        &lt;li&gt;需要解决图片跨域问题 image.crossOrigin = '';&lt;/</span>li&gt;</span><br><span class="line">        &lt;li&gt;使用了Jquery库的$.Deferred()方法&lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/</span>ol&gt;</span><br><span class="line">    &lt;p id=<span class="string">"container2"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br><span class="line">    &lt;script src=<span class="string">"https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line">    &lt;script&gt;</span><br><span class="line">    <span class="keyword">let</span> imgSrc = <span class="string">"https://z649319834.github.io/Learn_Example/video_track/webvtt.jpg"</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//width、height调用时传入具体像素值，控制大小 ,不传则默认图像大小</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">getBase64Image</span>(<span class="params">img, width, height</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> canvas = <span class="built_in">document</span>.createElement(<span class="string">"canvas"</span>);</span><br><span class="line">        canvas.width = width ? width : img.width;</span><br><span class="line">        canvas.height = height ? height : img.height;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">var</span> ctx = canvas.getContext(<span class="string">"2d"</span>);</span><br><span class="line">        ctx.drawImage(img, <span class="number">0</span>, <span class="number">0</span>, canvas.width, canvas.height);</span><br><span class="line">        <span class="keyword">var</span> dataURL = canvas.toDataURL();</span><br><span class="line">        <span class="keyword">return</span> dataURL;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">getCanvasBase64</span>(<span class="params">img</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> image = <span class="keyword">new</span> Image();</span><br><span class="line">        <span class="comment">//至关重要</span></span><br><span class="line">        image.crossOrigin = <span class="string">''</span>;</span><br><span class="line">        image.src = img;</span><br><span class="line">        <span class="comment">//至关重要</span></span><br><span class="line">        <span class="keyword">var</span> deferred = $.Deferred();</span><br><span class="line">        <span class="keyword">if</span> (img) &#123;</span><br><span class="line">            image.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">                deferred.resolve(getBase64Image(image)); <span class="comment">//将base64传给done上传处理</span></span><br><span class="line">                <span class="built_in">document</span>.getElementById(<span class="string">"container2"</span>).appendChild(image);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> deferred.promise(); <span class="comment">//问题要让onload完成后再return sessionStorage['imgTest']</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    getCanvasBase64(imgSrc)</span><br><span class="line">        .then(<span class="function"><span class="keyword">function</span>(<span class="params">base64</span>) </span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"方式二》》》》》》》》》"</span>, base64);</span><br><span class="line">        &#125;, <span class="function"><span class="keyword">function</span>(<span class="params">err</span>) </span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(err);</span><br><span class="line">        &#125;);</span><br><span class="line">    &lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>body&gt;</span><br><span class="line"></span><br><span class="line">&lt;<span class="regexp">/html&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">function change(obj) &#123;</span></span><br><span class="line"><span class="regexp">    var file = document.getElementById("FileUploadx1").files[0];</span></span><br><span class="line"><span class="regexp">    var reader = new FileReader();</span></span><br><span class="line"><span class="regexp">    reader.readAsDataURL(file[0])</span></span><br><span class="line"><span class="regexp">    reader.onload = function(e) &#123;</span></span><br><span class="line"><span class="regexp">        $('#addImg1').attr('src', this.result)</span></span><br><span class="line"><span class="regexp">    &#125;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">    var imgs = "";</span></span><br><span class="line"><span class="regexp">    var formFile = new FormData();</span></span><br><span class="line"><span class="regexp">    var fileObj = document.getElementById("FileUploadx1").files[0]; /</span><span class="regexp">/ js 获取文件对象</span></span><br><span class="line"><span class="regexp">    formFile.append("imageurl", fileObj); /</span><span class="regexp">/加入视频图片</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">    </span></span><br><span class="line"><span class="regexp">    var data = formFile;</span></span><br><span class="line"><span class="regexp">    /</span><span class="regexp">/$('.sctp').css('display','none')</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">    $.ajax(&#123;</span></span><br><span class="line"><span class="regexp">        url: "data.aspx?book=savescimage",</span></span><br><span class="line"><span class="regexp">        data: data,</span></span><br><span class="line"><span class="regexp">        type: "Post",</span></span><br><span class="line"><span class="regexp">        dataType: "json",</span></span><br><span class="line"><span class="regexp">        cache: false, /</span><span class="regexp">/上传文件无需缓存</span></span><br><span class="line"><span class="regexp">        processData: false, /</span><span class="regexp">/用于对data参数进行序列化处理 这里必须false</span></span><br><span class="line"><span class="regexp">        contentType: false, /</span><span class="regexp">/必须</span></span><br><span class="line"><span class="regexp">        success: function(result) &#123;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">            if (result.msg == "success") &#123;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">            &#125; else &#123;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">            &#125;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">        &#125;,</span></span><br><span class="line"><span class="regexp">        error: function() &#123;</span></span><br><span class="line"><span class="regexp">            alert("出错了");</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">        &#125;</span></span><br><span class="line"><span class="regexp">    &#125;)</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br></pre></td></tr></table></figure>
+<p>面对这个情况，小程序基础库提供了让开发者自己创建界面组件的特性，称之为“自定义组件”。通过这个特性，开发者就能够将这样的交互模块抽象成界面组件，使界面代码组织变得非常灵活。</p>
+<p>01，开发者可以将一些复用性强的代码抽象成自定义组件，它们的使用方法与基础库内置的 view 、 button等基础组件非常相似。这样的组件化非常有利于代码逻辑的解耦合。</p>
+<p>02，自定义组件局部更新时的性能相比页面的局部更新要小很多，在必要时可以利用这个特点进行性能优化。</p>
+<p>03，自定义组件是相对独立的功能模块，开发者可以将自己的自定义组件代码开源出来，与其他开发者共享开发成果。</p>
+<p>如何编写一个自定义组件？</p>
+<p>每个自定义组件由四个代码文件组成：</p>
+<p>json文件 用于于放置一些最基本的组件配置</p>
+<p>wxml 文件 组件模版</p>
+<p>wxss 文件 组件的样式，只在组件内部节点上生效（这个文件是可选的）</p>
+<p>js 文件 组件的 JS 代码，承载组件的主要逻辑</p>
+<p>这四个文件与编写一个页面时用到的四个文件非常类似，但也有区别。下面将介绍如何利用这四个文件编写一个简单的自定义组件。</p>
+<p>1.组件配置</p>
+<p>编写一个自定义组件，首先应在小程序代码目录中合适的位置创建一个 json 文件。这里我们把文件放置在小程序的 components目录下，名为 custom-checkbox.json 。</p>
+<p>这个文件中包含以下内容：</p>
+<p><img src="http://t12.baidu.com/it/u=3637876253,290426546&amp;fm=173&amp;app=25&amp;f=JPEG?w=640&amp;h=103" alt="img"></p>
+<p>2.组件模板</p>
+<p>在同一目录下，创建一个模版文件 custom-checkbox.wxml 。这个文件的写法与页面模版很类似：</p>
+<p><img src="http://t10.baidu.com/it/u=1189815477,1193870929&amp;fm=173&amp;app=25&amp;f=JPEG?w=640&amp;h=145&amp;s=0EF0EC12CD226D2054EDD4D3000050B3" alt="img"></p>
+<p>这个模版将在组件中渲染出一个 checkbox 和一个 label 。</p>
+<p>3.组件样式</p>
+<p>同样类似于页面， wxss 文件中可以指定组件节点的样式。其中的样式仅在组件内部生效。需要注意的是，样式只能通过类选择器（如 .the-class-name ）来指定：</p>
+<p><img src="http://t10.baidu.com/it/u=3859657605,608462023&amp;fm=173&amp;app=25&amp;f=JPEG?w=640&amp;h=119&amp;s=9C247C334B2365245A6984DA0000C0B3" alt="img"></p>
+<p>4.组件定义</p>
+<p>组件的 JS 文件中必须包含组件定义。定义时使用 Component 构造器：</p>
+<p><img src="http://t11.baidu.com/it/u=1504840195,3759410614&amp;fm=173&amp;app=25&amp;f=JPEG?w=640&amp;h=326&amp;s=1C267C330B62452414FDB5DA000080B3" alt="img"></p>
+<p>简单的 Component 构造器调用包含3个定义段：</p>
+<p>methods 中的方法可以用来包含组件的事件回调函数；</p>
+<p>data 是组件的内部数据，可以用 this.setData 方法来改变；</p>
+<p>properties 中声明这个组件的属性，上例中声明了 title 属性，这样，组件外部在使用组件时就可以指定这个属性的值。</p>
+<p>这样我们就编写好了 custom-checkbox 这个组件。</p>
+<p>如何使用自定义组件？</p>
+<p>使用上面这个自定义组件的方法很简单。</p>
+<p>Step 1</p>
+<p>在需要使用这个组件的页面所对应的 json 文件中，添加下面的自定义组件声明：</p>
+<p><img src="http://t10.baidu.com/it/u=2209317972,4280084377&amp;fm=173&amp;app=25&amp;f=JPEG?w=640&amp;h=140&amp;s=182874334D625F204854B4DC0000C0B3" alt="img"></p>
+<p>Step 2</p>
+<p>在页面对应的 wxml 文件中使用了：</p>
+<p><img src="http://t11.baidu.com/it/u=209958574,2462853158&amp;fm=173&amp;app=25&amp;f=JPEG?w=640&amp;h=61" alt="img"></p>
+<p>这样，在页面上最终呈现的效果如下：</p>
+<p>在自定义组件中也是可以引用其他自定义组件的，方法与在页面中引用的方法类似。</p>
+<p>高级特性与注意事项</p>
+<p>除了上述的基本功能外，自定义组件还提供了一组基础接口，用来实现各种各样的功能。</p>
+<p>01在页面和自定义组件间通信时，最常用的方法是事件机制，自定义组件可以使用 triggerEvent 接口向页面发送事件，页面 WXML 中使用 bind 或者 catch 就可以监听到。</p>
+<p>02如果事件机制还不足以满足组件间通信需要的话，可以使用 selectComponent 接口。</p>
+<p>03如果同时建立了好几个有相互关联关系的组件，可以使用组件间关系接口 relations 。</p>
+<p>04组件间可能需要共享部分代码，这时可以使用behaviors 。</p>
+<p>有关它们的详细文档，请参考 开发者文档 - 框架 - 自定义组件 章节。</p>
+<p>还需要注意的是，一些与 WXML 节点相关的接口，如wx.createSelectorQuery 、 wx.createCanvasContext ，在自定义组件中使用时有一定的变化，使用时请再次阅读一下相关的文档。</p>
 
       
 
@@ -284,7 +339,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/01/10/图片转base64/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/01/29/小程序组件开发/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -298,18 +353,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/01/10/验证码/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          验证码
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/01/10/正则匹配数/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">正则匹配数</div>
+    <a href="/2019/01/17/操作浏览器历史记录/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">操作浏览器历史记录</div>
       <i class="icon-circle-right"></i>
     </a>
   
