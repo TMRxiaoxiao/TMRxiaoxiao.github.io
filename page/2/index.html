@@ -163,6 +163,84 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-微博第三方登录" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/12/19/微博第三方登录/">微博第三方登录</a>
+    </h1>
+  
+
+        
+        <a href="/2018/12/19/微博第三方登录/" class="archive-article-date">
+  	<time datetime="2018-12-19T09:14:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="微博第三方登录的坑"><a href="#微博第三方登录的坑" class="headerlink" title="微博第三方登录的坑"></a>微博第三方登录的坑</h2><p>网页接入微博第三方登录，在这遇到好多坑，特此记录一下，终于出坑了，开心</p>
+<p>在最开始使用微博第三方登录是用的纯前端来做的，使用微博端的jssdk来进行授权登录流程, 这是登录的代码，这基本上就是按照官方文档里写的，</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">WB2.login(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 验证是否登入成功</span></span><br><span class="line">    <span class="keyword">if</span> (WB2.checkLogin()) &#123;</span><br><span class="line">        <span class="comment">// api 入口 </span></span><br><span class="line">        WB2.anyWhere(<span class="function"><span class="keyword">function</span> (<span class="params">W</span>) </span>&#123;</span><br><span class="line">            <span class="comment">// 调用 account/get_uid 接口，获取用户信息                        </span></span><br><span class="line">            W.parseCMD(<span class="string">'/account/get_uid.json'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">oResult, bStatus</span>) </span>&#123;</span><br><span class="line">                <span class="built_in">console</span>.log(oResult, bStatus, <span class="string">"oResult,bStatus"</span>)</span><br><span class="line">                <span class="keyword">if</span> (bStatus) &#123;</span><br><span class="line">                    <span class="built_in">console</span>.log(<span class="number">1</span>)</span><br><span class="line">                    <span class="comment">// 本地验证 uid 是否存在，如果存在则自动登入绑定账户，不存在则不做任何操作</span></span><br><span class="line">                    islogin(oResult.uid)</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;, &#123;&#125;, &#123;</span><br><span class="line">                method: <span class="string">'get'</span>,</span><br><span class="line">                cache_time: <span class="number">30</span></span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2018/12/19/微博第三方登录/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/12/19/微博第三方登录/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-刷新页面" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
